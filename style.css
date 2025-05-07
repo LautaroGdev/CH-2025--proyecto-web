@@ -1,0 +1,245 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-family: Public Sans, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* header */
+.nav-logo {
+    width: 150px;
+}
+
+/* .btn-descarga {
+    position: absolute;
+    right: 0;
+} */
+/* header nav {
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* header nav img {
+    width: 145px;
+    height: 34px;
+} */
+
+/* header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 600;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #21283e;
+}
+
+.a-app {
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    background-color: transparent;
+    color: #002066;
+    border: 1.5px solid #002066;
+    font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 18px;
+    width: 13%;
+    height: 40px;
+    border-radius: 30px;
+} */
+
+/* inicio  */
+    .hero-bg img {
+        width: 100%;
+        mask-image: linear-gradient(white 90%, transparent);}
+    .hero-article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px 10px 10px;}
+    .hero-textos {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;}
+    .hero-textos h1 {
+        color: #022A9A;
+        font-size: 2rem;}
+    .hero-textos p {
+        font-size: 1.1rem;
+        color: #606882;}
+    .hero-button {
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 15px 60px;
+        background-color: #022A9A;
+        color: white;
+    }
+
+    /* SECTION-CARDS */
+    .cards {
+        margin: 50px 0px;}
+    .cards-title {
+        font-weight: 600;
+        margin: 20px;}
+    .cards-grid {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;}
+    .cards-item {
+        margin: 0 auto;
+        padding: 15px 5px 10px 15px;
+        width: 350px;
+        height: 200px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px 2px rgb(236, 234, 234);
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: 
+        "texto icono"
+        "link icono"
+        ;}
+    
+    .cards-item h2 {
+        padding: 0 10px;
+        grid-area: texto;
+        align-content: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+
+    }
+    .cards-item a {
+        padding: 0 10PX;
+        grid-area: link;
+        align-content: center;
+    }    
+    .cards-item img {
+        width: 100px;
+        grid-area: icono;
+        place-self: center;
+    }
+
+/* section {
+    position: relative;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 210px;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+section article h1 {
+    color: #022a9a;
+    font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 40px;
+}
+
+section article p {
+    font-size: 18px;
+    font-family: Public Sans, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+section article a {
+    text-align: center;
+    width: 35%;
+    padding: 14px 50px;
+    font-family: Public Sans, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #022A9A;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+} */
+
+/* funcionalidades */
+
+.section-funcionalidades h1 {
+    color: #ffffff;
+}
+
+.section-funcionalidades p{
+    color: #ffffff;
+}
+
+.section-funcionalidades a {
+    background-color: #ffffff;
+    color: #022A9A;
+}
+
+.section-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.section-2 div {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border: 1px solid ;
+}
+
+/* AYUDA Y SEGURIDAD */
+
+.section-ayuda article p {
+    color: #606882;
+}
+
+/* SOBRE-UALA */
+
+.section-nosotros {
+    height: 130vh;
+    text-align: center;
+}
+
+.section-textos {
+    padding: 30px 0;
+}
+
+.section-textos h1 {
+    color: #022a9a;
+    font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 40px;
+}
+
+.section-textos p {
+    font-size: 18px;
+    font-family: Public Sans, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.section-img img {
+    width: 450px;
+    height: 400px;
+    border-radius: 30px;
+}
