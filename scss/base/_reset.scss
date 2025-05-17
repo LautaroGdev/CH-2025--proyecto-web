@@ -1,0 +1,25 @@
+@use "../abstract/variables";
+@use "../abstract/mixin";
+
+//RESET
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+//ESTILOS-GENERALES
+
+body {
+    background-color: variables.$background-principal;
+    @include mixin.font-general;
+}
+
+h1 {
+    @include mixin.h1(2rem);
+}
+
+h2 {
+    @include mixin.h2 (1.5rem);    
+}
+
+p {
+    @include mixin.p (1rem);            
+}

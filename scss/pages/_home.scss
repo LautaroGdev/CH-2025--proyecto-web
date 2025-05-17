@@ -1,0 +1,268 @@
+
+@use "../abstract/mixin" as *;
+@use "../abstract/variables" as *;
+@use "sass:list";
+@use "../abstract/listas";
+
+
+/*INICIO*/
+.nav-logo {
+    width: 150px;
+}
+
+
+.hero {
+    color: white;
+    background-image: url(../../img/background-header.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    mask-image: linear-gradient(white 90%, transparent);
+    .hero-article {
+        margin: 0 auto;
+        @include flex(flex, flex-start, center, column);
+        width: 80%;
+        gap: 0.5rem;
+        display: none;
+    }
+    .hero-button {
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 15px 60px;
+        background-color: $background-secundario;
+        color: $color-boton;
+        display: none;
+    }
+}
+.hero-article-sm {
+        margin: 3rem auto;
+        width: 80%;
+        padding: 0 1rem;
+        @include flex(flex, flex-start, center, column);
+        gap: 0.5rem;
+    }
+    .hero-button-sm {
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 15px 60px;
+        background-color: $background-secundario;
+        color: $color-boton;
+    }
+
+/* SECTION-CARDS */
+
+.cards {
+    width: 100%;
+    margin: 50px 0px;
+    .cards-title {
+        max-width: 400px;
+        width: 80%;
+        font-weight: list.nth( listas.$weight , 2 );
+        margin: 1.5rem auto;
+    }
+    .cards-grid {
+        margin: 0 auto;
+        @include grid (grid, 1fr, 25%);
+        gap: 1rem;
+        .cards-item {
+            margin: 0 auto;
+            padding: 1rem 1rem 0.7rem 1rem;
+            width: 95%;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: $shadow-cards;
+            background-color: $background-cards;
+            @include grid (grid, 1.7fr 1fr, 70% 30%);
+            grid-template-areas: 
+            "texto icono"
+            "link icono"
+            ;
+            h2 {
+                padding: 0 10px;
+                grid-area: texto;
+                align-content: center;
+            }
+            a {
+                padding: 0 10PX;
+                grid-area: link;
+                align-content: center;
+            }
+            img {
+                width: 100px;
+                grid-area: icono;
+                place-self: center;
+            }
+        }
+    }
+}
+
+/* SECTION-SLIDER-1 */
+
+.slider {
+    .slider-container {
+        width: 19rem;
+        margin: 80px auto;
+        display: flex;
+        gap: 30px;
+        position: relative;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        border-radius: 20px;
+        .slider-card {
+            background-color: $background-cards;
+            box-shadow: $shadow-cards;height: 350px;
+            min-width: 100%;
+            left: 0;
+            position: sticky;
+            scroll-snap-align: center;
+            margin: 0 15px;
+            padding: 30px;
+            @include flex (flex, space-between, flex-start, column);
+            gap: 20px;
+            border-radius: 20px;
+            img {
+                width: 90px;
+            }
+            .slider-textos {
+                height: 10rem;
+                h4 {
+                    color: list.nth(listas.$paleta-colores, 4);
+                    font-weight: list.nth( listas.$weight , 1 );
+                }
+            }
+        }
+    }
+}
+
+/* SECTION-CARD-PROMO */
+
+.promo-card {
+    width: 100%;
+    margin: 80px 0;
+    .promo-card-container {
+        width: 85%;
+        height: 22rem;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: $shadow-cards;
+        position: relative;
+        .promo-card-img {     
+            background-image: url(../../img/promociones-card/promociones-card.webp);
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .promo-card-textos {
+            position: absolute;
+            top: 0;
+            margin: 2rem;
+            h2 {
+                color: list.nth(listas.$paleta-colores , 1 );
+                font-weight: list.nth(listas.$weight , 2 );
+            }
+            a {
+                color: list.nth(listas.$paleta-colores , 1 );
+            }    
+        }   
+    }
+}
+
+/* SECTION-SLIDER-2 */
+
+.slider-2 {
+    height: 30rem;
+    @include flex (flex, center, center, column);
+    background-color: $background-secundario;
+    .slider-2-container {
+        width: 80%;
+        margin: 0 auto;
+        @include flex (flex, center, center, column);
+        gap: 2rem;
+        border-radius: 20px;
+        .slider-2-titulo {
+            h2 {
+                color: list.nth(listas.$paleta-colores, 1);
+            }
+        }
+        .slider-2-flex {
+            width: 280px;
+            display: flex;
+            gap: 30px;
+            position: relative;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            .slider-2-card {
+                padding: 30px;
+                background-color: $background-cards;
+                /* height: 250px; */
+                min-width: 100%;
+                left: 0;
+                position: sticky;
+                scroll-snap-align: center;
+                border-radius: 20px;
+                img {
+                    width: 60px;
+                }
+                .slider-2-textos {
+                    height: 70%;
+                    align-content: center;
+                    h4 {
+                        margin-top: 0.5rem;
+                        color: list.nth(listas.$paleta-colores, 4);
+                        font-weight: list.nth( listas.$weight , 2 );
+                    }
+                }    
+            }
+        }
+    }
+}
+
+//SECTION-SALDO
+
+.saldo {
+    width: 100%;
+    @include flex(flex, center, center, column);
+    gap: 30px;
+    margin: 50px 0;
+    padding: 20px;
+    .saldo-textos {
+        
+        h2, p {
+            margin-bottom: 20px;
+        }
+    }
+    .saldo-img {
+        
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+//FOOTER
+
+footer {
+    margin: 40px 0;
+    div {
+        @include flex(flex, center, center, row);
+        gap: 20px;
+        img {
+            width: 50px;
+        }
+        h4 span {
+            color: list.nth(listas.$paleta-colores, 6);
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}
+

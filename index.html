@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link-bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- link-google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <!-- link-css  -->  
     <link rel="stylesheet" href="style.css">
     <title>Ualá</title>
@@ -30,17 +34,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/sobrenosotros.html">Sobre nosotros</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./pages/sobrenosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Seguridad
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
+                  
                 </ul>
                 <div class="container w-auto mx-0 btn-descarga">
                     <button class="btn btn-outline-success " type="submit">Search</button>
@@ -48,34 +42,25 @@
               </div>    
             </div>
           </nav>
-        <!-- <nav>
-            <img src="./img/logo-uala.png" alt="logo">
-            <ul>
-                <li><a href="./pages/funcionalidades.html">Funcionalidades</a></li>
-                <li><a href="./pages/ayudayseguridad.html">Ayuda y seguridad</a></li>
-                <li><a href="./pages/sobrenosotros.html">Sobre Ualá</a></li>
-            </ul>
-            <a href="#" class="a-app">Descarga la app</a>
-        </nav> -->
     </header>
     <main>
 
       <!-- section-hero -->
 
       <section class="hero">
-        <div class="hero-bg">  
-          <img src="./img/background-header.jpg" alt="Fondo de la seccion principal">
+        <div class="hero-article">
+          <h1>En Uala lo hacemos facil</h1>
+          <p>Podés comprar, transferir, comprar dólares, invertir y generar rendimientos con la mejor tasa del mercado. Todo desde un mismo lugar.</p>
+          <a href="" class="hero-button">Descargar la app</a>
         </div>
-        <article class="hero-article">
-          <div class="hero-textos">  
-            <h1>
-              En Ualá lo hacemos fácil
-            </h1>
-            <p>Podés comprar, trasferir, comprar dólares, invertir y generar rendimientos con la mejor tasa del mercado.<br> Todo gratis y desde un mismo lugar.</p>
-            <a class="hero-button">Descarga la app</a>
-          </div>
-        </article>
       </section>
+
+      <div class="hero-article-sm">
+          <h1>En Uala lo hacemos facil</h1>
+          <p>Podés comprar, transferir, comprar dólares, invertir y generar rendimientos con la mejor tasa del mercado. Todo desde un mismo lugar.</p>
+          <a href="" class="hero-button-sm">Descargar la app</a>
+      </div>
+
 
       <!-- section-cards -->
 
@@ -99,8 +84,8 @@
           </div>
           <div class="cards-item">
             <h2>Comprar dólares y recibirlos al instante</h2>
-            <img src="./img/dolares.png" alt="icono de Dolares">
             <a href="#">Sobre Dólares</a>
+            <img src="./img/dolares.png" alt="icono de Dolares">
           </div>
         </div>
       </section>  
@@ -111,26 +96,34 @@
         <div class="slider-container">
           <div class="slider-card">
             <img src="./img/section-slider-1/illus-compras.webp" alt="ilustracion de compras">
-            <h4>Comprar</h4>
-            <p>Podés hacer compras en cualquier comercio con Código QR y tarjetas Ualá</p>
+            <div class="slider-textos">
+              <h4>Comprar</h4>
+              <p>Podés hacer compras en cualquier comercio con Código QR y tarjetas Ualá<p>
+            </div>
             <a href="#">Ver más</a>
           </div>
           <div class="slider-card">
             <img src="./img/section-slider-1/ilus-inversiones.webp" alt="ilustracion de inversion">
-            <h4>Invertir</h4>
-            <p>Podés comprar dólares e invertir en CEDEARs, Acciones, Bonos FCI y Plazo Fijo desde la app Ualá</p>
+            <div class="slider-textos">
+              <h4>Invertir</h4>
+              <p>Podés comprar dólares e invertir en CEDEARs, Acciones, Bonos FCI y Plazo Fijo desde la app Ualá</p>
+            </div>
             <a href="#">Ver más</a>
           </div>
           <div class="slider-card">
             <img src="./img/section-slider-1/ilus-facturas.webp" alt="ilustracion de facturas">
-            <h4>Pagar y recargar</h4>
-            <p>Podés pagar todas tus facturas, recargar tus servicios prepagos y cargar la SUBE</p>
+            <div class="slider-textos">
+              <h4>Pagar y recargar</h4>
+              <p>Podés pagar todas tus facturas, recargar tus servicios prepagos y cargar la SUBE</p>
+            </div>
             <a href="#">Ver más</a>
           </div>
           <div class="slider-card">
             <img src="./img/section-slider-1/ilus-transferencias.webp" alt="ilustrcion de transferencias">
-            <h4>Transferir</h4>
-            <p>Podés enviar y recibir plata desde cualquier cuenta. Gratis y en el acto</p>
+            <div class="slider-textos">
+              <h4>Transferir</h4>
+              <p>Podés enviar y recibir plata desde cualquier cuenta. Gratis y en el acto</p>
+            </div>  
             <a href=""></a>
           </div>  
         </div>
@@ -138,7 +131,7 @@
 
       <section class="promo-card">
         <div class="promo-card-container">
-          <img src="./img/promociones-card/promociones-card.webp" alt="Fondo de carta de promociones">
+          <div class="promo-card-img"></div>
           <div class="promo-card-textos">  
             <h2>Disfrutá de las mejores promociones</h2>
             <a href="#">Ver promociones</a>
@@ -146,8 +139,62 @@
         </div>
       </section>
 
+      <section class="slider-2">
+        <div class="slider-2-container">
+          <div class="slider-2-titulo">
+            <h2>¿Cómo sumarte a Ualá?</h2>
+          </div>
+          <div class="slider-2-flex">
+            <div class="slider-2-card">
+              <img src="./img/section-slider-1/illus-compras.webp" alt="ilustracion de compras">
+              <div class="slider-2-textos">
+                <h4>Paso 1</h4>
+                <p>Descargá la app desde Play Store o App Store en tu celular.<p>
+              </div>
+            </div>
+            <div class="slider-2-card">
+              <img src="./img/section-slider-1/ilus-inversiones.webp" alt="ilustracion de inversion">
+              <div class="slider-2-textos">
+                <h4>Paso 2</h4>
+                <p>Terminá el registro con tus datos desde la app u pedí tu tarjeta digital.</p>
+              </div>
+            </div>
+            <div class="slider-2-card">
+              <img src="./img/section-slider-1/ilus-facturas.webp" alt="ilustracion de facturas">
+              <div class="slider-2-textos">
+                <h4>Paso 3</h4>
+                <p>Para compras físicas, pedi tus tarjetas Ualá Matercard desde la app.</p>
+              </div>
+            </div>
+            <div class="slider-2-card">
+              <img src="./img/section-slider-1/ilus-transferencias.webp" alt="ilustrcion de transferencias">
+              <div class="slider-2-textos">
+                <h4>Paso 4</h4>
+                <p>Activá tus tarjetas desde la app y empezá a usarlas.</p>
+              </div>  
+            </div>
+          </div>  
+        </div>
+      </section> 
+
+      <section class="saldo">
+        <div class="saldo-textos">
+          <h2>Cargá saldo para usar Ualá</h2>
+          <p>Podés ingresar dinero en efectivo, por transferencia compartiendo tu CBU o Alias y también desde una cuenta externa.</p>
+          <p>Además, podés programar ingresos mensuales y acceder a benficios exclusivos para hacer que tu plata rinda más.</p>
+        </div>
+        <div class="saldo-img">
+          <img src="./img/section-saldo/section-saldo.jpg" alt="Seccion de carga de saldo en la App Ualá">
+        </div>
+      </section>
+
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <img src="./img/footer/logo-footer.webp" alt="logo-uala">
+        <h4>Lo hacemos <span class="span-facil">fácil</span></h4>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
