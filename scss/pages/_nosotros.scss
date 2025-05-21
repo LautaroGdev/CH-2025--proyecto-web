@@ -1,0 +1,146 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/variables" as *;
+@use "../abstract/listas";
+@use "sass:list";
+
+/*SECTION-NOSOTROS*/
+
+.nosotros {
+    width: 100%;
+    @include flex(flex, center, center, column);
+    .nosotros-compañia {
+        width: 100%;
+        margin: 0 auto;
+        @include flex(flex, center, center, column);
+        padding: 5rem 2rem;
+        gap: 4rem;
+        .nosotros-textos {
+            max-width: 100%; 
+        } 
+        img {
+            border-radius: 1rem;
+            max-width: 100%;
+        }      
+    }
+    .nosotros-creador {
+        background-color: list.nth(listas.$paleta-colores, 3);
+        margin: 0 auto;
+        @include flex(flex, center, center, column);
+        gap: 4rem;
+        padding: 5rem 2rem;
+        width: 100%;
+        .nosotros-textos-creador {
+            max-width: 100%;
+            h2 {
+                color: list.nth(listas.$paleta-colores, 2);
+            }
+            p {
+                color: list.nth(listas.$paleta-colores, 2);
+            }  
+        }
+        img {
+            border-radius: 1rem;
+            max-width: 100%;
+        }
+    }
+}
+
+/*SECTION-COMIENZO*/
+
+.comienzo {
+    width: 100%;
+    padding: 5rem 2rem;
+    .comienzo-container {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        
+        h2, p {
+            text-align: start;
+            margin: 1rem auto;
+        }
+        .video {
+            max-width: 100%;
+            border-radius: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+/*SECTION-PILARES*/
+
+    .pilares {
+        padding: 2rem 2rem;
+        width: 100%;
+        .pilares-titles {
+            margin-bottom: 3rem;
+        }
+        .pilares-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0;
+            .pilares-grid {
+                @include grid(grid, 1fr, auto);
+                gap: 2rem;
+                .pilares-cards {
+                    background-color: list.nth(listas.$paleta-colores, 1);
+                    @include grid(grid, 1fr 2fr, auto);
+                    border-radius: 1rem;
+                    align-items: center;
+                    min-height: 10rem;
+                    padding: 1.5rem;
+                    box-shadow: $shadow-cards;
+                    img {
+                        margin: 0 auto;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .pilares-grid-textos {
+                        padding-left: 1rem;
+                        h4 {
+                            font-weight: list.nth(listas.$weight, 2);
+                        }
+                        p {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*SECTION-EQUIPO*/
+
+    .equipo {
+        width: 100%;
+        padding: 3rem 2rem;
+        .equipo-container {
+            @include flex(flex, center, center, column);
+            gap: 2rem;
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+            .equipo-textos {
+                text-align: center;
+                h2 {
+                    margin-bottom: 1rem;
+                }
+                p {
+                    margin-bottom: 1rem;
+                }
+                .equipo-container-button {
+                    text-align: center;
+                    margin-top: 2rem;
+                    a {
+                        background-color: list.nth(listas.$paleta-colores, 3);
+                        color: list.nth(listas.$paleta-colores, 1);
+                        text-decoration: none;
+                        border-radius: 1.5rem;
+                        padding: 1rem 4rem;
+                    }    
+                } 
+            }
+        }    
+    }
+        

@@ -1,6 +1,9 @@
 @use "./base/reset";
 @use "./pages/home";
+@use "./pages/nosotros";
+@use "./pages/ayudayseguridad";
 @use "./abstract/variables";
 @use "./abstract/mixin";
 @use "./abstract/listas";
 @use "./layout/mqtablet";
+@use "./layout/mqdesktop";

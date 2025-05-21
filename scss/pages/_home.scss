@@ -10,55 +10,50 @@
     width: 150px;
 }
 
+/* HERO */
 
 .hero {
-    color: white;
-    background-image: url(../../img/background-header.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    mask-image: linear-gradient(white 90%, transparent);
-    .hero-article {
-        margin: 0 auto;
-        @include flex(flex, flex-start, center, column);
-        width: 80%;
-        gap: 0.5rem;
-        display: none;
-    }
-    .hero-button {
-        text-align: center;
-        text-decoration: none;
-        border-radius: 30px;
-        padding: 15px 60px;
-        background-color: $background-secundario;
-        color: $color-boton;
-        display: none;
+    width: 100%;
+    .hero-container {
+        width: 100%;
+        .hero-lg {
+            display: none;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .hero-sm {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .hero-article {
+            padding: 3rem 2rem;
+            p {
+                margin-bottom: 1.5rem;
+            }
+            .hero-container-button {
+                background-color: list.nth(listas.$paleta-colores, 3);
+                text-align: center;
+                border-radius: 2rem;
+                padding: 1rem 0;
+                a {
+                    color: list.nth(listas.$paleta-colores, 1);
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
-.hero-article-sm {
-        margin: 3rem auto;
-        width: 80%;
-        padding: 0 1rem;
-        @include flex(flex, flex-start, center, column);
-        gap: 0.5rem;
-    }
-    .hero-button-sm {
-        text-align: center;
-        text-decoration: none;
-        border-radius: 30px;
-        padding: 15px 60px;
-        background-color: $background-secundario;
-        color: $color-boton;
-    }
+
 
 /* SECTION-CARDS */
 
 .cards {
     width: 100%;
-    margin: 50px 0px;
+    margin: 3rem 0;
     .cards-title {
         max-width: 400px;
         width: 80%;
@@ -67,6 +62,7 @@
     }
     .cards-grid {
         margin: 0 auto;
+        padding: 1rem;
         @include grid (grid, 1fr, 25%);
         gap: 1rem;
         .cards-item {
@@ -104,26 +100,27 @@
 /* SECTION-SLIDER-1 */
 
 .slider {
+    margin: 5rem 0;
+    width: 100%;
+    padding: 0 2rem;
     .slider-container {
-        width: 19rem;
-        margin: 80px auto;
+        margin: 0 auto;
+        width: 100%;
         display: flex;
-        gap: 30px;
+        gap: 2rem;
         position: relative;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
-        border-radius: 20px;
         .slider-card {
             background-color: $background-cards;
-            box-shadow: $shadow-cards;height: 350px;
-            min-width: 100%;
+            box-shadow: $shadow-cards;
+            min-width: 310px;
             left: 0;
             position: sticky;
             scroll-snap-align: center;
-            margin: 0 15px;
-            padding: 30px;
+            padding: 1.7rem;
             @include flex (flex, space-between, flex-start, column);
-            gap: 20px;
+            gap: 1.3rem;
             border-radius: 20px;
             img {
                 width: 90px;
@@ -139,11 +136,12 @@
     }
 }
 
+
 /* SECTION-CARD-PROMO */
 
 .promo-card {
     width: 100%;
-    margin: 80px 0;
+    margin: 5rem 0;
     .promo-card-container {
         width: 85%;
         height: 22rem;
@@ -152,7 +150,7 @@
         box-shadow: $shadow-cards;
         position: relative;
         .promo-card-img {     
-            background-image: url(../../img/promociones-card/promociones-card.webp);
+            background-image: url(../../img/promociones-card/promociones-card.jpg);
             background-size: cover;
             background-position: center center;
             width: 100%;
@@ -250,7 +248,7 @@
 //FOOTER
 
 footer {
-    margin: 40px 0;
+    margin: 5rem 0;
     div {
         @include flex(flex, center, center, row);
         gap: 20px;

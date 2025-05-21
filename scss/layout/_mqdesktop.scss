@@ -1,0 +1,164 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+@use "../base/reset";
+@use "sass:list";
+@use "../abstract/listas";
+
+
+@media screen and (min-width: 1200px) {
+
+    /*HOME*/
+     
+     /*HERO*/
+
+    .hero {
+        .hero-container {
+            .hero-lg {
+                display: block;
+                position: relative;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                .hero-article-lg {
+                    width: 40%;
+                    position: absolute;
+                    top: 18rem;
+                    left: 8rem;
+                    padding: 3rem 2rem;
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+                    .hero-container-button-lg {
+                        background-color: list.nth(listas.$paleta-colores, 3);
+                        text-align: center;
+                        border-radius: 2rem;
+                        padding: 1rem 0;
+                        width: 50%;
+                        a {
+                            color: list.nth(listas.$paleta-colores, 1);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .hero-sm {
+                display: none;
+            }
+            .hero-article {
+                display: none;
+            }
+        }
+    }
+
+    /* SECTION-CARDS */
+
+    .cards {
+        margin: 8rem auto;
+        .cards-grid {     
+            @include grid (grid, repeat(2, 1fr), auto);   
+            width: 60%;
+        }
+    }
+
+    
+     /* SECTION-SLIDER-1 */
+
+    .slider {
+        margin: 8rem 0;
+        width: 100%;
+        padding: 0 2rem;
+        .slider-container {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: relative;
+            overflow-x: unset;
+            scroll-snap-type: none;
+            .slider-card {
+                background-color: $background-cards;
+                box-shadow: $shadow-cards;
+                min-width: 18%;
+                max-width: 310px;
+                position: static;
+                scroll-snap-align: unset;
+                padding: 1.7rem;
+                @include flex (flex, space-between, flex-start, column);
+                gap: 1.3rem;
+                border-radius: 20px;
+                img {
+                    width: 90px;
+                }
+                .slider-textos {
+                    height: 10rem;
+                    h4 {
+                        color: list.nth(listas.$paleta-colores, 4);
+                        font-weight: list.nth( listas.$weight , 1 );
+                    }
+                }
+            }
+        }
+    }
+
+    /* SECTION-CARD-PROMO */
+
+    .promo-card {
+        margin: 8rem 0;
+          .promo-card-container {
+               width: 70%;
+               .promo-card-img {
+                    background-image: url(../../img/promociones-card/card-promo-bg-md.jpg);
+                    background-position: right center;
+                    background-repeat: no-repeat;
+               }
+               .promo-card-textos {
+                    top: 7rem;
+                    left: 3rem;
+                    margin: 1.5rem;
+               }
+          }
+    }
+
+    /* SECTION-SLIDER-2 */
+
+    .slider-2 {
+        width: 100%;
+        margin: 8rem 0;
+        .slider-2-container {
+            width: 100%;
+            .slider-2-flex {
+                width: 79%;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                position: static;
+                overflow-x: hidden;
+                scroll-snap-type: none;
+                .slider-2-card {
+                    padding: 1.7rem;
+                    min-width: 18%;
+                    max-width: 310px;
+                    position: static;
+                    scroll-snap-align: unset;   
+                }
+            }
+        }
+    }
+
+    /* SECTION-SALDO */
+
+    .saldo {
+        margin: 8rem auto;
+        width: 60%;
+        padding: 0;
+        @include flex(flex, center, center, row);
+        .saldo-textos {
+           width: 50%;
+        }
+        .saldo-img {
+           width: 50%;
+        }
+    }
+}

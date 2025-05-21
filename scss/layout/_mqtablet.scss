@@ -1,22 +1,27 @@
 @use "../abstract/variables";
 @use "../abstract/mixin" as *;
 @use "../base/reset";
+
+
 @media (min-width: 700px) {
-  /* .hero {
-    background-image: url(../../img/background-header.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 90vh;
-    mask-image: none;
-  } */
+     
+     /*HOME*/
+     
      /*HERO*/
-     .hero-article-sm {
-          width: 60%;
+
+     .hero {
+          .hero-container {
+               .hero-article {
+                    margin: 0 auto;
+                    width: 60%;
+               }
+          }
      }
 
      /*SECTION-CARDS*/
 
      .cards {
+          margin: 5rem 0;
           .cards-title {
                text-align: center
           }
@@ -30,11 +35,11 @@
      /*SECTION-SLIDER-1*/
 
      .slider {
-          
+          margin: 5rem 0;
           .slider-container {
-               width: 85%;
+               width: 80%;
+               padding: 0 1rem;
                .slider-card {
-                    min-width: 45%;
                     position: static;
                }
           }
@@ -43,10 +48,11 @@
      /*SECTION-CARD-PROMO*/
 
     .promo-card {
+          margin: 5rem 0;
           .promo-card-container {
                width: 80%;
                .promo-card-img {
-                    background-image: url(../../img/promociones-card/card-promo-bg-md.webp);
+                    background-image: url(../../img/promociones-card/card-promo-bg-md.jpg);
                     background-position: right center;
                     background-repeat: no-repeat;
                }
@@ -59,14 +65,15 @@
     /*SECTION-SLIDER-2*/
 
     .slider-2 {
+          margin: 5rem 0;
           .slider-2-container {
                height: 90%;
                @include flex (flex, space-evenly, center, column);
                .slider-2-flex {
-                    width: 100%;
+                    width: 90%;
                     .slider-2-card {
                          min-width: 48%;
-                         height: 18rem;
+                         min-height: 17rem;
                          position: static;
                     }
                }
@@ -76,18 +83,97 @@
      /*SECTION-SALDO*/
 
      .saldo {
+          margin: 5rem auto;
+          width: 80%;
           padding: 2rem;
           @include flex(flex, center, center, row);
           .saldo-textos {
                width: 50%;
-               height: 100%;
-               padding: 1rem;
           }
           .saldo-img {
                width: 50%;
           }
      }
 
+     /*NOSOTROS*/
 
+     /*SECTION-NOSOTROS*/
 
+     .nosotros {
+          margin: 5rem 0;
+          .nosotros-compañia {
+               @include flex(flex, center, center, row);
+               padding: 5rem 5rem;
+               img {
+                    max-width: 50%
+               }
+          }
+          .nosotros-creador {
+               @include flex(flex, center, center, row-reverse);
+               padding: 5rem 5rem;
+               img {
+                    max-width: 50%;
+               }
+          }
+     }          
+
+     /* SECTION-COMIENZO */
+
+     .comienzo {
+          .comienzo-container {
+               max-width: 90%;
+          }
+     }
+
+     /* SECTION-PILARES */
+
+     .pilares {
+          .pilares-container {
+               width: 90%;
+               .pilares-grid {
+                    @include grid(grid, 1fr 1fr, auto);
+                    .pilares-cards:last-child {
+                         grid-column: 1/-1;
+                         justify-self: center;
+                         width: 100%;
+                    }
+               }
+          }
+     }
+
+     /* SECTION-EQUIPO */
+
+     .equipo {
+          .equipo-container {
+               margin: 0 auto;
+               width: 70%;
+          }
+     }
+
+     /* AYUDA-Y-SEGURIDAD */
+
+     /* SECTION-HERO */
+
+     .hero--ays {
+          .hero-container--ays {
+               margin: 0 auto;
+               width: 90%;
+          }
+     }
+
+     /* SECTION-PROGRAMA-EDUCACION */
+
+     .programa-educacion {
+          margin: 0 auto;
+          width: 90%;
+          .programa-educacion-container { 
+               margin: 0 auto;
+               width: 70%;
+               img {
+                    width: 100%;
+                    border-radius: 1rem;
+               }
+               
+          }
+     }
 }

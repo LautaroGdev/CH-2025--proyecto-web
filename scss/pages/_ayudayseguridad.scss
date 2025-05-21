@@ -1,0 +1,93 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+@use "../abstract/listas";
+@use "sass:list";
+
+/* SECTION-HERO */
+
+.hero--ays {
+    background-image: none;
+    width: 100%;
+    padding: 3rem 2rem;
+    .hero-container--ays {
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+}
+
+/* SECTION-SLIDER-1 */
+
+.slider {
+    width: 100%;
+    padding: 0 2rem;
+    .slider-container {
+        width: 100%;
+        display: flex;
+        gap: 1.5rem;
+        position: relative;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        .slider-card {
+            background-color: $background-cards;
+            box-shadow: $shadow-cards;
+            min-width: 310px;
+            left: 0;
+            position: sticky;
+            scroll-snap-align: center;
+            padding: 1.7rem;
+            @include flex (flex, space-between, flex-start, column);
+            gap: 1.3rem;
+            border-radius: 20px;
+            img {
+                width: 90px;
+            }
+            .slider-textos {
+                height: 10rem;
+                h4 {
+                    color: list.nth(listas.$paleta-colores, 4);
+                    font-weight: list.nth( listas.$weight , 1 );
+                }
+            }
+        }
+    }
+}
+
+/* SECTION-PROGRAMA */
+
+.programa-educacion {
+    width: 100%;
+    padding: 3rem 2rem;
+    .programa-educacion-container { 
+        width: 100%;
+        @include flex(flex, center, center, column);
+        gap: 1rem;
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+        .programa-educacion-textos {
+            padding: 1rem 0.2rem;
+            @include flex(flex, center, center, column);
+            gap: 0.5rem;
+            h4 {
+                width: 100%;
+            }
+            p {
+                height: 100%;
+            }
+            a {
+                text-decoration: none;
+                border-radius: 2rem;
+                padding: 1rem 3rem;
+                background-color: $background-secundario;
+                color: $color-boton;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
