@@ -67,6 +67,7 @@
         width: 100%;
         @include flex(flex, center, center, column);
         gap: 1rem;
+        border-bottom: solid 4px #022A9A,;
         img {
             width: 100%;
             border-radius: 1rem;
