@@ -29,8 +29,7 @@
                text-align: center
           }
           .cards-grid {     
-               @include grid (grid, repeat(2, 1fr), auto);
-               
+               @include grid(grid, repeat(2, 1fr), auto);
                width: 80%;
           }
      }
@@ -41,7 +40,7 @@
           margin: 5rem 0;
           .slider-container {
                width: 80%;
-               padding: 0 1rem;
+               padding: 1rem 0.3rem;
                .slider-card {
                     position: static;
                }
@@ -54,13 +53,18 @@
           margin: 5rem 0;
           .promo-card-container {
                width: 80%;
+               overflow: hidden;
                .promo-card-img {
                     background-image: url(../../img/promociones-card/card-promo-bg-md.jpg);
                     background-position: right center;
                     background-repeat: no-repeat;
+                    transition: transform 0.5s ease;
                }
                .promo-card-textos {
                     margin: 1.5rem;
+               }
+               .promo-card-img:hover {
+                    transform: scale(1.2);
                }
           }
     }
@@ -229,14 +233,19 @@
      .cuotas {
           .cuotas-container {
                width: 90%;
+               overflow: hidden;
                     .cuotas-img {     
                          background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Desktop.jpg);
                          background-position: center right;
+                         transition: transform 0.5s ease;
                     }
                     .cuotas-textos {
                          h2 {
                               color: list.nth(listas.$paleta-colores , 6 );
                          }   
+                    }
+                    .cuotas-img:hover {
+                         transform: scale(1.1);
                     }
           }
      }

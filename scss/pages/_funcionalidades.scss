@@ -6,7 +6,7 @@
 /* HERO */
 
 .hero--fun {
-    background-color: nth(listas.$paleta-colores, 3);
+    background-color: list.nth(listas.$paleta-colores, 3);
     width: 100%;
     padding: 3rem 2rem;
     position: relative;
@@ -17,13 +17,13 @@
         width: 100%;
         .hero-textos--fun {
             margin-bottom: 2.5rem;
-            color: nth(listas.$paleta-colores, 2);
+            color: list.nth(listas.$paleta-colores, 2);
             h1 {
-                color: nth(listas.$paleta-colores, 2);
+                color: list.nth(listas.$paleta-colores, 2);
             }
             p {
                 margin-bottom: 2rem;
-                color: nth(listas.$paleta-colores, 2);
+                color: list.nth(listas.$paleta-colores, 2);
             }
             a {
                 text-decoration: none;

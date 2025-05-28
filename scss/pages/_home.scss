@@ -9,6 +9,20 @@
 .nav-logo {
     width: 150px;
 }
+.navegacion {
+    li {
+        a {
+            font-weight: bolder;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+            perspective: 3rem;
+            margin: 0 0.5rem;
+        }
+        a:hover {
+            transform: rotateX(25deg);
+        }
+    }
+}
 
 /* HERO */
 
@@ -34,15 +48,18 @@
             p {
                 margin-bottom: 1.5rem;
             }
-            .hero-container-button {
+            a {
                 background-color: list.nth(listas.$paleta-colores, 3);
                 text-align: center;
                 border-radius: 2rem;
-                padding: 1rem 0;
-                a {
-                    color: list.nth(listas.$paleta-colores, 1);
-                    text-decoration: none;
-                }
+                padding: 1rem 4rem;
+                color: list.nth(listas.$paleta-colores, 1);
+                text-decoration: none;
+            }
+            a:hover {
+                color: list.nth(listas.$paleta-colores, 3);
+                background-color: list.nth(listas.$paleta-colores, 1);
+                box-shadow: inset 0 0 7px #022A9A;
             }
         }
     }
@@ -93,6 +110,13 @@
                 width: 100px;
                 grid-area: icono;
                 place-self: center;
+                animation: rotacion 2s infinite  ease-in-out;
+                transform-origin: center;
+            }
+            @keyframes rotacion {
+                0% {transform: rotate(-5deg);}
+                50% {transform: rotate(5deg);}
+                100% {transform: rotate(-5deg);}
             }
         }
     }
@@ -103,9 +127,10 @@
 .slider {
     margin: 5rem 0;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0rem 2rem;
     .slider-container {
         margin: 0 auto;
+        padding: 3rem 0.3rem;
         width: 100%;
         display: flex;
         gap: 2rem;
@@ -249,12 +274,19 @@
 //FOOTER
 
 footer {
-    margin: 5rem 0;
+    margin: 3rem 0 1.5rem 0;
     div {
         @include flex(flex, center, center, row);
         gap: 20px;
         img {
             width: 50px;
+            animation: giro 5s infinite ease-in-out;
+        }
+        @keyframes giro{
+            0% { transform: rotate(0deg); }
+            40%  { transform: rotate(360deg); }
+            80%  { transform: rotate(720deg); }
+            100% { transform: rotate(720deg); }
         }
         h4 span {
             color: list.nth(listas.$paleta-colores, 6);

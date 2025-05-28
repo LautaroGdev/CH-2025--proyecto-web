@@ -29,16 +29,18 @@
                     p {
                         margin-bottom: 1.5rem;
                     }
-                    .hero-container-button-lg {
+                    a {
                         background-color: list.nth(listas.$paleta-colores, 3);
                         text-align: center;
                         border-radius: 2rem;
-                        padding: 1rem 0;
-                        width: 50%;
-                        a {
-                            color: list.nth(listas.$paleta-colores, 1);
-                            text-decoration: none;
-                        }
+                        padding: 1rem 4rem;
+                        color: list.nth(listas.$paleta-colores, 1);
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: list.nth(listas.$paleta-colores, 3);
+                        background-color: list.nth(listas.$paleta-colores, 1);
+                        box-shadow: inset 0 0 7px #022A9A;
                     }
                 }
             }
@@ -281,11 +283,11 @@
                 top: 30rem;
                 left: 8rem;
                 h1 {
-                    color: nth(listas.$paleta-colores, 2);
+                    color: list.nth(listas.$paleta-colores, 2);
                 }
                 p {
                     margin-bottom: 2rem;
-                    color: nth(listas.$paleta-colores, 2);
+                    color: list.nth(listas.$paleta-colores, 2);
                 }
                 a {
                     text-decoration: none;
@@ -365,7 +367,7 @@
             width: 80%;
             .cuotas-textos {
                 top: 7rem;
-                left: 5rem;
+                left: 2rem;
                 h2 {
 
                     color: list.nth(listas.$paleta-colores , 1 );
