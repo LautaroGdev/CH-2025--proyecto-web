@@ -777,7 +777,7 @@ footer div h4 span {
   position: relative;
 }
 .cuotas .cuotas-container .cuotas-img {
-  background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Mobile.jpg);
+  background-image: url(../../img/funcionalidades/pasar-a-cuotas/bg-pasar-a-cuotas.jpg);
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -989,7 +989,7 @@ footer div h4 span {
     overflow: hidden;
   }
   .cuotas .cuotas-container .cuotas-img {
-    background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Desktop.jpg);
+    background-image: url(../../img/funcionalidades/pasar-a-cuotas/bg-pasar-a-cuotas-mobile.jpg);
     background-position: center right;
     transition: transform 0.5s ease;
   }
