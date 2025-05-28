@@ -1,6 +1,9 @@
 @use "../abstract/variables";
 @use "../abstract/mixin" as *;
+@use "../abstract/listas";
+@use "sass:list";
 @use "../base/reset";
+
 
 
 @media (min-width: 700px) {
@@ -161,6 +164,7 @@
           }
      }
 
+
      /* SECTION-PROGRAMA-EDUCACION */
 
      .programa-educacion {
@@ -174,6 +178,66 @@
                     border-radius: 1rem;
                }
                
+          }
+     }
+
+
+
+     /* FUNCIONALIDADES */
+
+     /* SLIDER */
+
+     .slider--fun {
+          margin: 5rem 0;
+          .slider-container--fun {
+               height: 90%;
+               @include flex (flex, space-evenly, center, column);
+               .slider-flex--fun {
+                    width: 100%;
+                    .slider-card--fun {
+                         min-width: 47%;
+                         min-height: 17rem;
+                         position: static;
+                    }
+               }
+          }
+     }
+
+     /* SECTION-CARDS */
+
+     .cards--fun {
+          .cards-title--fun {
+               text-align: center;
+               width: 100%;
+          }
+          .cards-grid--fun {
+               width: 80%;
+          }
+     }
+
+     /* SECTION-CUOTAS-SALDO */
+
+     .cuotas-saldo {
+          .cuotas-saldo-container { 
+                    width: 80%;
+                    margin: 0 auto;       
+          } 
+     }
+
+     /* SECTION-PASAR-A-CUOTAS */
+
+     .cuotas {
+          .cuotas-container {
+               width: 90%;
+                    .cuotas-img {     
+                         background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Desktop.jpg);
+                         background-position: center right;
+                    }
+                    .cuotas-textos {
+                         h2 {
+                              color: list.nth(listas.$paleta-colores , 6 );
+                         }   
+                    }
           }
      }
 }

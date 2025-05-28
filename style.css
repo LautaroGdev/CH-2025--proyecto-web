@@ -108,6 +108,7 @@ p {
   grid-template-areas: "texto icono" "link icono";
 }
 .cards .cards-grid .cards-item h2 {
+  font-size: 1.4rem;
   padding: 0 10px;
   grid-area: texto;
   align-content: center;
@@ -443,9 +444,12 @@ footer div h4 span {
 
 /* SECTION-HERO */
 .hero--ays {
-  background-image: none;
   width: 100%;
   padding: 3rem 2rem;
+  position: relative;
+}
+.hero--ays .hero-lg-ays {
+  display: none;
 }
 .hero--ays .hero-container--ays {
   width: 100%;
@@ -471,7 +475,7 @@ footer div h4 span {
 .slider .slider-container .slider-card {
   background-color: white;
   box-shadow: 1px 1px 10px 4px rgb(236, 234, 234);
-  min-width: 310px;
+  min-width: 300px;
   left: 0;
   position: sticky;
   scroll-snap-align: center;
@@ -534,6 +538,222 @@ footer div h4 span {
 }
 
 /* FOOTER */
+/* HERO */
+.hero--fun {
+  background-color: #022A9A;
+  width: 100%;
+  padding: 3rem 2rem;
+  position: relative;
+}
+.hero--fun .hero-lg-fun {
+  display: none;
+}
+.hero--fun .hero-container--fun {
+  width: 100%;
+}
+.hero--fun .hero-container--fun .hero-textos--fun {
+  margin-bottom: 2.5rem;
+  color: whitesmoke;
+}
+.hero--fun .hero-container--fun .hero-textos--fun h1 {
+  color: whitesmoke;
+}
+.hero--fun .hero-container--fun .hero-textos--fun p {
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+.hero--fun .hero-container--fun .hero-textos--fun a {
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  background-color: white;
+  color: rgb(2, 42, 155);
+}
+.hero--fun .hero-container--fun img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* SECTION-SLIDER */
+.slider--fun {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(2, 42, 155);
+}
+.slider--fun .slider-container--fun {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 20px;
+}
+.slider--fun .slider-container--fun .slider-titulo--fun h2 {
+  color: white;
+}
+.slider--fun .slider-container--fun .slider-flex--fun {
+  width: 280px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun {
+  padding: 30px;
+  background-color: white;
+  /* height: 250px; */
+  min-width: 100%;
+  left: 0;
+  position: sticky;
+  scroll-snap-align: center;
+  border-radius: 20px;
+}
+.slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun img {
+  width: 60px;
+}
+.slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun .slider-textos--fun {
+  height: 70%;
+  align-content: center;
+}
+.slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun .slider-textos--fun h4 {
+  margin-top: 0.5rem;
+  color: #504e4e;
+  font-weight: 600;
+}
+
+/* SECTION-CARDS */
+.cards--fun {
+  width: 100%;
+  margin: 3rem 0;
+}
+.cards--fun .cards-title--fun {
+  max-width: 400px;
+  width: 80%;
+  font-weight: 600;
+  margin: 1.5rem auto;
+}
+.cards--fun .cards-grid--fun {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.cards--fun .cards-grid--fun .cards-item--fun {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 4px rgb(236, 234, 234);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.cards--fun .cards-grid--fun .cards-item--fun p {
+  margin: 0;
+}
+.cards--fun .cards-grid--fun .cards-item--fun img {
+  width: 60px;
+}
+
+/* SECTION-CUOTAS-SALDO */
+.cuotas-saldo {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+.cuotas-saldo .cuotas-saldo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cuotas-saldo .cuotas-saldo-container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos {
+  padding: 1rem 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos h4 {
+  width: 100%;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos p {
+  height: 100%;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos ul {
+  list-style: none;
+  padding: 0;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos ul li {
+  margin-bottom: 1.5rem;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos ul li .cuotas-saldo-container-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos ul li .cuotas-saldo-container-icon p {
+  margin: 0;
+  text-align: start;
+  width: 100%;
+}
+.cuotas-saldo .cuotas-saldo-container .cuotas-saldo-textos ul li .cuotas-saldo-container-icon img {
+  width: 40px;
+}
+
+/* SECTION-PASAR-A-CUOTAS */
+.cuotas {
+  width: 100%;
+}
+.cuotas .cuotas-container {
+  width: 85%;
+  height: 22rem;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 4px rgb(236, 234, 234);
+  position: relative;
+}
+.cuotas .cuotas-container .cuotas-img {
+  background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Mobile.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.cuotas .cuotas-container .cuotas-textos {
+  position: absolute;
+  top: 0;
+  margin: 2rem;
+}
+.cuotas .cuotas-container .cuotas-textos h2 {
+  color: white;
+  font-weight: 600;
+}
+.cuotas .cuotas-container .cuotas-textos a {
+  color: white;
+}
+
 @media (min-width: 700px) {
   /*HOME*/
   /*HERO*/
@@ -682,6 +902,50 @@ footer div h4 span {
     width: 100%;
     border-radius: 1rem;
   }
+  /* FUNCIONALIDADES */
+  /* SLIDER */
+  .slider--fun {
+    margin: 5rem 0;
+  }
+  .slider--fun .slider-container--fun {
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slider--fun .slider-container--fun .slider-flex--fun {
+    width: 100%;
+  }
+  .slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun {
+    min-width: 47%;
+    min-height: 17rem;
+    position: static;
+  }
+  /* SECTION-CARDS */
+  .cards--fun .cards-title--fun {
+    text-align: center;
+    width: 100%;
+  }
+  .cards--fun .cards-grid--fun {
+    width: 80%;
+  }
+  /* SECTION-CUOTAS-SALDO */
+  .cuotas-saldo .cuotas-saldo-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* SECTION-PASAR-A-CUOTAS */
+  .cuotas .cuotas-container {
+    width: 90%;
+  }
+  .cuotas .cuotas-container .cuotas-img {
+    background-image: url(../../img/funcionalidades/pasar-a-cuotas/AR_PP_Banner_Cuotas_Desktop.jpg);
+    background-position: center right;
+  }
+  .cuotas .cuotas-container .cuotas-textos h2 {
+    color: rgb(255, 88, 116);
+  }
 }
 @media screen and (min-width: 1200px) {
   /*HOME*/
@@ -777,7 +1041,7 @@ footer div h4 span {
     margin: 8rem 0;
   }
   .promo-card .promo-card-container {
-    width: 70%;
+    width: 80%;
   }
   .promo-card .promo-card-container .promo-card-img {
     background-image: url(../../img/promociones-card/card-promo-bg-md.jpg);
@@ -828,6 +1092,197 @@ footer div h4 span {
   }
   .saldo .saldo-img {
     width: 50%;
+  }
+  /* AYUDA Y SEGURIDAD */
+  /* HERO */
+  .hero--ays {
+    padding: 0 0;
+  }
+  .hero--ays .hero-lg-ays {
+    display: block;
+    width: 100%;
+  }
+  .hero--ays .hero-lg-ays img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero--ays .hero-lg-ays .hero-textos-lg-ays {
+    position: absolute;
+    top: 30rem;
+    left: 10rem;
+  }
+  .hero--ays .hero-container--ays {
+    display: none;
+  }
+  /* SECTION-PROGRAMA */
+  .programa-educacion {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .programa-educacion .programa-educacion-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .programa-educacion .programa-educacion-container img {
+    width: 50%;
+    border-radius: 1rem;
+  }
+  /* NOSOTROS */
+  /* HERO */
+  .nosotros {
+    margin: 0 0 5rem 0;
+  }
+  .nosotros .nosotros-compañia {
+    gap: 5rem;
+  }
+  .nosotros .nosotros-compañia .nosotros-textos {
+    width: 30%;
+    padding-left: 1rem;
+  }
+  .nosotros .nosotros-compañia img {
+    max-width: 30%;
+  }
+  .nosotros .nosotros-creador {
+    gap: 5rem;
+  }
+  .nosotros .nosotros-creador .nosotros-textos-creador {
+    width: 30%;
+  }
+  .nosotros .nosotros-creador img {
+    max-width: 30%;
+  }
+  /* SECTION-COMIENZO */
+  .comienzo .comienzo-container {
+    max-width: 60%;
+  }
+  .comienzo .comienzo-container .video {
+    width: 1200px;
+    height: 700px;
+  }
+  /* SECTION-PILARES */
+  .pilares .pilares-container {
+    width: 60%;
+  }
+  .pilares .pilares-container .pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .pilares .pilares-container .pilares-grid .pilares-cards:last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 100%;
+  }
+  .equipo .equipo-container {
+    width: 60%;
+  }
+  /* FUNCIONALIDAD */
+  /* HERO */
+  .hero--fun {
+    padding: 0;
+  }
+  .hero--fun .hero-lg-fun {
+    width: 100%;
+    display: block;
+  }
+  .hero--fun .hero-lg-fun img {
+    width: 100%;
+  }
+  .hero--fun .hero-lg-fun .hero-textos-lg-fun {
+    width: 40%;
+    position: absolute;
+    top: 30rem;
+    left: 8rem;
+  }
+  .hero--fun .hero-lg-fun .hero-textos-lg-fun h1 {
+    color: whitesmoke;
+  }
+  .hero--fun .hero-lg-fun .hero-textos-lg-fun p {
+    margin-bottom: 2rem;
+    color: whitesmoke;
+  }
+  .hero--fun .hero-lg-fun .hero-textos-lg-fun a {
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 1rem 7rem;
+    background-color: white;
+    color: rgb(2, 42, 155);
+  }
+  .hero--fun .hero-container--fun {
+    display: none;
+  }
+  /* SECTION-SLIDER */
+  .slider--fun {
+    margin: 0 0 5rem 0;
+  }
+  .slider--fun .slider-container--fun {
+    width: 100%;
+  }
+  .slider--fun .slider-container--fun .slider-flex--fun {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    position: static;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+  }
+  .slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun {
+    padding: 30px;
+    background-color: white;
+    height: 300px;
+    min-width: 20%;
+    max-width: 310px;
+    position: static;
+    scroll-snap-align: unset;
+  }
+  .slider--fun .slider-container--fun .slider-flex--fun .slider-card--fun img {
+    width: 90px;
+  }
+  /* SECTION-CARDS */
+  .cards--fun {
+    margin: 5rem 0;
+  }
+  .cards--fun .cards-grid--fun {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  /* SECTION-CUOTAS-SALDO */
+  .cuotas-saldo {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  .cuotas-saldo .cuotas-saldo-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .cuotas-saldo .cuotas-saldo-container img {
+    width: 50%;
+  }
+  /* SECTION-PASAR-A-CUOTAS */
+  .cuotas {
+    margin: 5rem 0;
+  }
+  .cuotas .cuotas-container {
+    width: 80%;
+  }
+  .cuotas .cuotas-container .cuotas-textos {
+    top: 7rem;
+    left: 5rem;
+  }
+  .cuotas .cuotas-container .cuotas-textos h2 {
+    color: white;
   }
 }
 
