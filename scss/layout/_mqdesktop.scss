@@ -197,6 +197,7 @@
             width: 60%;
             @include flex(flex, center, center, row);
             gap: 2rem;
+            border-bottom: none;
             img {
                 width: 50%;
                 border-radius: 1rem;
@@ -350,6 +351,7 @@
         width: 100%;
         padding: 3rem 2rem;
         .cuotas-saldo-container {
+            border-bottom: none;
             width: 60%;
             @include flex(flex, center, center, row);
             gap: 2rem;
@@ -368,8 +370,8 @@
             .cuotas-textos {
                 top: 7rem;
                 left: 2rem;
+                width: 40%;
                 h2 {
-
                     color: list.nth(listas.$paleta-colores , 1 );
                 }   
             } 

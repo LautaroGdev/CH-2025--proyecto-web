@@ -12,6 +12,13 @@ body {
     @include mixin.font-general;
 }
 
+header {
+    nav{
+        box-shadow: 0 1px 10px #a3b7f0;
+        z-index: 20;
+    }
+}
+
 h1 {
     @include mixin.h1(2rem);
 }

@@ -177,6 +177,7 @@
           .programa-educacion-container { 
                margin: 0 auto;
                width: 70%;
+               border-bottom: none;
                img {
                     width: 100%;
                     border-radius: 1rem;
@@ -224,7 +225,8 @@
      .cuotas-saldo {
           .cuotas-saldo-container { 
                     width: 80%;
-                    margin: 0 auto;       
+                    margin: 0 auto;     
+                    border-bottom: none;  
           } 
      }
 
@@ -240,6 +242,7 @@
                          transition: transform 0.5s ease;
                     }
                     .cuotas-textos {
+                         width: 60%;
                          h2 {
                               color: list.nth(listas.$paleta-colores , 6 );
                          }   

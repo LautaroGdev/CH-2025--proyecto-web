@@ -197,6 +197,7 @@
             position: absolute;
             top: 0;
             margin: 2rem;
+            width: 80%;
             h2 {
                 color: list.nth(listas.$paleta-colores , 1 );
                 font-weight: list.nth(listas.$weight , 2 );

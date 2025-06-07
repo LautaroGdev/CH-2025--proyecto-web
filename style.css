@@ -12,6 +12,11 @@ body {
   font-weight: 500;
 }
 
+header nav {
+  box-shadow: 0 1px 10px #a3b7f0;
+  z-index: 20;
+}
+
 h1 {
   font-size: 2rem;
   font-family: Public Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
@@ -36,10 +41,6 @@ p {
 /*INICIO*/
 .nav-logo {
   width: 150px;
-}
-
-header nav {
-  box-shadow: 0 1px 10px #a3b7f0;
 }
 
 .navegacion li a {
@@ -795,6 +796,7 @@ footer div h4 span {
   position: absolute;
   top: 0;
   margin: 2rem;
+  width: 80%;
 }
 .cuotas .cuotas-container .cuotas-textos h2 {
   color: white;
@@ -952,6 +954,7 @@ footer div h4 span {
   .programa-educacion .programa-educacion-container {
     margin: 0 auto;
     width: 70%;
+    border-bottom: none;
   }
   .programa-educacion .programa-educacion-container img {
     width: 100%;
@@ -989,6 +992,7 @@ footer div h4 span {
   .cuotas-saldo .cuotas-saldo-container {
     width: 80%;
     margin: 0 auto;
+    border-bottom: none;
   }
   /* SECTION-PASAR-A-CUOTAS */
   .cuotas .cuotas-container {
@@ -999,6 +1003,9 @@ footer div h4 span {
     background-image: url(./img/funcionalidades/pasar-a-cuotas/bg-pasar-a-cuotas-mobile.jpg);
     background-position: center right;
     transition: transform 0.5s ease;
+  }
+  .cuotas .cuotas-container .cuotas-textos {
+    width: 60%;
   }
   .cuotas .cuotas-container .cuotas-textos h2 {
     color: rgb(255, 88, 116);
@@ -1188,6 +1195,7 @@ footer div h4 span {
     align-items: center;
     flex-direction: row;
     gap: 2rem;
+    border-bottom: none;
   }
   .programa-educacion .programa-educacion-container img {
     width: 50%;
@@ -1322,6 +1330,7 @@ footer div h4 span {
     padding: 3rem 2rem;
   }
   .cuotas-saldo .cuotas-saldo-container {
+    border-bottom: none;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -1342,6 +1351,7 @@ footer div h4 span {
   .cuotas .cuotas-container .cuotas-textos {
     top: 7rem;
     left: 2rem;
+    width: 40%;
   }
   .cuotas .cuotas-container .cuotas-textos h2 {
     color: white;
